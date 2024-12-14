@@ -7,25 +7,8 @@ import Logo from './Logo'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
-  const nameArray = ['e', 'l', 'e', 'c', 'h', 'i']
-  const jobArray = [
-    'J',
-    'u',
-    's',
-    't',
-    ' ',
-    'A',
-    ' ',
-    'C',
-    'h',
-    'i',
-    'l',
-    'l',
-    ' ',
-    'G',
-    'u',
-    'y'
-  ]
+  const nameArray = 'elechi'.split("")
+  const jobArray = 'Just A Chill Guy'.split("")
 
   useEffect(() => {
     let timeoutId = setTimeout(() =>{
@@ -61,7 +44,7 @@ const Home = () => {
             idx={21}
           />
         </h1>
-        <h2>Junior Developer </h2>
+        <h2>Junior Developer | BSc Hons Graduand</h2>
         <Link to="/contact" className="flat-button">
           CONTACT ME
         </Link>
