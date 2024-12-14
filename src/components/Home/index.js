@@ -4,6 +4,7 @@ import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import React, { useEffect, useState } from 'react'
 import Logo from './Logo'
+import Loader from 'react-loaders'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -23,6 +24,7 @@ const Home = () => {
     
 
   return (
+    <>
     <div className="container home-page">
       <div className="text-zone">
         <h1>
@@ -44,13 +46,15 @@ const Home = () => {
             idx={21}
           />
         </h1>
-        <h2>Junior Developer | BSc Hons Graduand</h2>
+        <h2>Junior Developer | BSc Honours Graduand</h2>
         <Link to="/contact" className="flat-button">
           CONTACT ME
         </Link>
       </div>
       <Logo />
     </div>
+    <Loader type="pacman" />
+    </>
   )
 }
 
