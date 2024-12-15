@@ -4,6 +4,8 @@ import { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCss3, faGithub, faHtml5, faJsSquare, faPhp, faReact } from '@fortawesome/free-brands-svg-icons';
 import Loader from 'react-loaders'
+import ContactImage from '../../assets/images/about.png'
+
 
 
 
@@ -68,6 +70,10 @@ const About = () => {
                 </div>
             </div>
         </div>
+
+        <div className='image-container'>
+                        <img src={ContactImage} alt='pic'></img>
+                    </div>
         <Loader type="pacman" />
         </>
     )
