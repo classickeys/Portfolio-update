@@ -1,10 +1,11 @@
 import { Link } from 'react-router-dom'
 import LogoTitle from '../../assets/images/logo-s1.png'
 import './index.scss'
-import AnimatedLetters from '../AnimatedLetters'
+import AnimatedLetters from '../AnimatedLetters/index.jsx'
 import React, { useEffect, useState } from 'react'
-import Logo from './Logo'
-import Loader from 'react-loaders'
+import Logo from './Logo/index.jsx'
+// import Loader from 'react-loaders'
+import { SpinnerRoundFilled } from 'spinners-react';
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -53,7 +54,10 @@ const Home = () => {
       </div>
       <Logo />
     </div>
-    <Loader type="pacman" />
+    <div className='loader-active'>
+      <SpinnerRoundFilled size={250} color='#ffd700' thickness={70} />
+      {/* <Loader type="pacman" /> */}
+    </div>
     </>
   )
 }
