@@ -4,6 +4,7 @@ import Layout from './components/Layout/index.jsx'
 import Home from './components/Home/index.jsx';
 import About from './components/About/index.jsx';
 import Contact from './components/Contact/index.jsx';
+import Projects from './components/Projects/index.jsx';
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path='/About' element={<About />} />
           <Route path='/Contact' element={<Contact />} />
-          <Route path='*' element={<Home />} />
+          <Route path='/Projects' element={<Projects />} />
         </Route>
 
       </Routes>

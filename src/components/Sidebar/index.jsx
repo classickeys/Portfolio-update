@@ -3,8 +3,11 @@ import './index.scss'
 import LogoS from '../../assets/images/logo-s1.png'
 import LogoSubtitle from '../../assets/images/logo_sub1.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLinkedin, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope, faHome, faUser  } from '@fortawesome/free-solid-svg-icons'
+import { faLinkedin, faInstagram, faGithub, faAppStore } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope, faHome, faProjectDiagram, faUser  } from '@fortawesome/free-solid-svg-icons'
+import { faAnchorLock } from '@fortawesome/free-solid-svg-icons/faAnchorLock'
+import { faArrowUpZA } from '@fortawesome/free-solid-svg-icons/faArrowUpZA'
+import { faStickyNote } from '@fortawesome/free-solid-svg-icons/faStickyNote'
 
 const Sidebar = () => (
 <div className = 'nav-bar'>
@@ -19,6 +22,9 @@ const Sidebar = () => (
         </NavLink>
         <NavLink exact="true" activeclassname="active" className="about-link" to="/about" >
             <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
+        </NavLink>
+        <NavLink exact="true" activeclassname="active" className="projects-link" to="/projects" >
+            <FontAwesomeIcon icon={faStickyNote} color="#4d4d4e" />
         </NavLink>
         <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact" >
             <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
