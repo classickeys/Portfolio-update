@@ -1,4 +1,4 @@
-import Loader from 'react-loaders'
+
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useRef, useState } from 'react'
@@ -6,6 +6,7 @@ import emailjs from '@emailjs/browser'
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet'
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
+import { SpinnerRoundFilled } from 'spinners-react';
 
 const Contact = () => {
 
@@ -118,7 +119,7 @@ const Contact = () => {
 
 
             </div>
-            <Loader type='pacman' />
+      <SpinnerRoundFilled className='loader-active' size={250} color='#ffd700' thickness={70} />
         </>
 
 
