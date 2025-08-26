@@ -91,10 +91,10 @@ const Projects = () => {
                                 <img src={OffcampImage} className={centered1 ? 'centered' : ''} onMouseEnter={handleMouseEnter1} alt='Rental project' />
                             </a>
                         </div>
-                        <div className={centered1 ? 'inactive' : ''}>
+                        {/* <div className={centered1 ? 'inactive' : ''}>
                             <p> This is the capstone project from my associate degree program. A tenant management application connected to a backend database.</p>
                             <a href={offCampUrl} className='project-link'>View Project</a>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
 
@@ -109,10 +109,10 @@ const Projects = () => {
                         <div className='project-image'>
                             <img src={PortfolioImage} className={centered2 ? 'centered' : ''} onMouseEnter={handleMouseEnter2} alt='Portfolio Project' />
                         </div>
-                        <div className={centered2 ? 'inactive' : ''}>
+                        {/* <div className={centered2 ? 'inactive' : ''}>
                             <p> This is my personal portfolio website built with JavaScript, HTML and CSS.</p>
                             <a href={oldUrl} className='project-link'>View Project</a>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
 
