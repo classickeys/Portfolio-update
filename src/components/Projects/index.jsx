@@ -21,7 +21,7 @@ const gridProjects = [
         link: offCampUrl,
     },
     {
-        title: 'Portfolio Frontend',
+        title: 'First Portfolio',
         description: 'My personal portfolio website built with JavaScript, HTML and CSS.',
         image: PortfolioImage,
         link: oldUrl,
@@ -83,7 +83,7 @@ const Projects = () => {
 
                         <h2>
                             <AnimatedLetters letterClass={letterClass}
-                                strArray={'Rental Management'.split("")}
+                                strArray={'Rental App'.split("")}
                                 idx={1} />
                         </h2>
                         <div className='project-image'>
@@ -103,11 +103,13 @@ const Projects = () => {
                     <div className='project-info'>
                         <h2>
                             <AnimatedLetters letterClass={letterClass}
-                                strArray={'Portfolio Frontend'.split("")}
+                                strArray={'Initial Page'.split("")}
                                 idx={1} />
                         </h2>
                         <div className='project-image'>
-                            <img src={PortfolioImage} className={centered2 ? 'centered' : ''} onMouseEnter={handleMouseEnter2} alt='Portfolio Project' />
+                            <a href={oldUrl}>
+                                <img src={PortfolioImage} className={centered2 ? 'centered' : ''} onMouseEnter={handleMouseEnter2} alt='Portfolio Project' />
+                            </a>
                         </div>
                         {/* <div className={centered2 ? 'inactive' : ''}>
                             <p> This is my personal portfolio website built with JavaScript, HTML and CSS.</p>
