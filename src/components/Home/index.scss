@@ -1,13 +1,30 @@
 .home-page {
-    .text-zone {
-        position: absolute;
-        left: 10%;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 40%;
-        max-height: 90%;
+    position: relative;
+    min-height: 100vh;
+    padding-top: 50px;
+    
+    .home-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 2rem;
+        width: 100%;
     }
 
+    .text-zone {
+        margin-left: 120px;
+        width: 40%;
+        max-height: 100%;
+    }
+
+    .logo-zone {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 250px;
+        width: 40%;
+    }
 
     h1 {
         color: #fff;
@@ -25,7 +42,6 @@
             margin-top: -40px;
             left: 15px;
             opacity: 0.6;
-
         }
 
         &::after{
@@ -38,9 +54,7 @@
             margin-left: 20px;
             animation: fadeIn 1s 1.7s backwards;
             opacity: 0.6;
-
         }
-
 
         img {
             width: 32px;
@@ -49,7 +63,6 @@
             height: auto;
             animation: rotateIn 1s linear both;
             animation-delay: 1.4s;
-
         }
     }
     h2 {
@@ -60,7 +73,6 @@
         letter-spacing: 3px;
         font-family: 'sans-serif';
         animation:  fadeIn 1s 1.8s backwards;
-
     }
     .flat-button{
         color: #ffd700;
@@ -80,6 +92,54 @@
             background: #ffd700;
             color: #333;
         }
-
     }
+}
+
+@media (max-width: 768px) {
+  .home-page {
+    .home-flex {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    .text-zone {
+      margin-left: 120px; // Corrected: Remove the margin on smaller screens
+      position: static;
+      transform: none;
+      width: 100%;
+      max-width: 100%;
+      padding: 1rem 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .logo-zone {
+      position: static;
+      transform: none;
+      margin-left: 120px;
+      width: 20%;
+    //   margin-top: 2rem;
+      justify-content: center;
+     align-items: flex-start;
+    
+      display: flex;
+    }
+    .text-zone h1 {
+      font-size: 4rem;
+    }
+    .text-zone h2 {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+    .text-zone {
+      margin-left: 0; // Corrected: Remove the margin on smaller screens
+    }
+  .text-zone h1 {
+    font-size: 1.2rem;
+  }
+  .text-zone h2 {
+    font-size: 0.8rem;
+  }
 }

@@ -21,19 +21,27 @@ const Logo = () => {
       duration: 1,
       opacity: 1,
     })
-      .from(outlineLogoRef.current, {
-        drawSVG: 0,
-        duration: 20,
-      })
+      .fromTo(
+        outlineLogoRef.current,
+        {
+          drawSVG: '0%', // start with no stroke
+        },
+        {
+          drawSVG: '100%', // draw the whole stroke
+          duration: 20, // adjust duration as needed
+          // ease: 'power2.inOut', // adjust easing as needed
+        })
 
     gsap.fromTo(
       solidLogoRef.current, {
       opacity: 0,
+      drawSVG: '0%',
     },
       {
         opacity: 1,
         delay: 4,
         duration: 4,
+        
       }
     )
   }, [])
