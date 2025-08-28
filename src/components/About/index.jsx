@@ -33,8 +33,7 @@ const About = () => {
                             idx={15}
                         />
                     </h1>
-                    <p>Hi, my name is Kelechi. I am an aspiring software engineer. Currently, I am focused on building my skills in web development
-                        building and maintaining scalable applications with a focus on AI technologies such as Semantic Kernel and other forms of LLM orchaestration to create business value.</p>
+                    <p>Hi, my name is Kelechi. I am an aspiring software engineer. Currently, I am focused on building my skills in web development, building and maintaining scalable applications with a focus on AI technologies such as Semantic Kernel and other forms of LLM orchestration to create business value.</p>
 
                 </div>
 
