@@ -22,38 +22,39 @@ const Home = () => {
   },[])
 
   return (
-    <>
     <div className="container home-page">
-      <div className="text-zone">
-        <h1>
-          <span className={letterClass}>H</span>
-          <span className={`${letterClass} _12`}>i</span>
-          <br />
-          <span className={`${letterClass} _13`}>I</span>
-          <span className={`${letterClass} _14`}>'m</span>
-          <img src={LogoTitle} alt="developer" />
-          <AnimatedLetters
-            letterClass={letterClass}
-            strArray={nameArray}
-            idx={15}
-          />
-          <br />
-          <AnimatedLetters
-            letterClass={letterClass}
-            strArray={jobArray}
-            idx={21}
-          />
-        </h1>
-        <h2> Aspiring Software Engineer | MSc Masters Candidate</h2>
-        <Link to="/contact" className="flat-button">
-          CONTACT ME
-        </Link>
+      <div className="home-flex">
+        <div className="text-zone">
+          <h1>
+            <span className={letterClass}>H</span>
+            <span className={`${letterClass} _12`}>i</span>
+            <br />
+            <span className={`${letterClass} _13`}>I</span>
+            <span className={`${letterClass} _14`}>'m</span>
+            <img src={LogoTitle} alt="developer" />
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={nameArray}
+              idx={15}
+            />
+            <br />
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={jobArray}
+              idx={21}
+            />
+          </h1>
+          <h2> Aspiring Software Engineer | MSc Masters Candidate</h2>
+          <Link to="/contact" className="flat-button">
+            CONTACT ME
+          </Link>
+        </div>
+        <div className="logo-zone">
+          <Logo />
+        </div>
       </div>
-      <Logo />
-    </div>
       <SpinnerRoundFilled className='loader-active' size={250} color='#ffd700' thickness={70} />
-    
-    </>
+    </div>
   )
 }
 

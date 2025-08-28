@@ -3,8 +3,9 @@
   width: 70px;
   height: 100%;
   z-index: 3;
-  position: absolute;
+  position: fixed;
   top: 0;
+  left: 0;
   min-height: 500px;
 
   .logo {

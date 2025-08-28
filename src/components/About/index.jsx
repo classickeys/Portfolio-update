@@ -38,40 +38,39 @@ const About = () => {
 
                 </div>
 
-                <div className='stage-cube-cont'>
-                    <div className='cubespinner'>
-                        <div className='face1'>
-                            <FontAwesomeIcon icon={faHtml5} color='#DD0031' />
 
-                        </div>
-                        <div className='face2'>
-                            <FontAwesomeIcon icon={faCss3} color='#F06529' />
-
-                        </div>
-                        <div className='face3'>
-                            <FontAwesomeIcon icon={faGithub} color='#28a4d9' />
-
-                        </div>
-                        <div className='face4'>
-                            <FontAwesomeIcon icon={faReact} color='#5ed4f4' />
-
-                        </div>
-                        <div className='face5'>
-                            <FontAwesomeIcon icon={faPhp} color='#efd81d' />
-
-                        </div>
-                        <div className='face6'>
-                            <FontAwesomeIcon icon={faJsSquare} color='#ec4v28' />
-
-                        </div>
-
+            </div>
+            <div className='ssecond-zone'>
+                <div className='image-container'>
+                    <img src={ContactImage} alt='pic'></img>
+                </div>
+                <div className='cubespinner'>
+                    <div className='face1'>
+                        <FontAwesomeIcon icon={faHtml5} color='#DD0031' />
 
                     </div>
-                </div>
-            </div>
+                    <div className='face2'>
+                        <FontAwesomeIcon icon={faCss3} color='#F06529' />
 
-            <div className='image-container'>
-                <img src={ContactImage} alt='pic'></img>
+                    </div>
+                    <div className='face3'>
+                        <FontAwesomeIcon icon={faGithub} color='#28a4d9' />
+
+                    </div>
+                    <div className='face4'>
+                        <FontAwesomeIcon icon={faReact} color='#5ed4f4' />
+
+                    </div>
+                    <div className='face5'>
+                        <FontAwesomeIcon icon={faPhp} color='#efd81d' />
+
+                    </div>
+                    <div className='face6'>
+                        <FontAwesomeIcon icon={faJsSquare} color='#ec4v28' />
+
+                    </div>
+
+                </div>
             </div>
             <SpinnerRoundFilled className='loader-active' size={250} color='#ffd700' thickness={70} />
 
